@@ -1,4 +1,4 @@
-n = random.randint(1, 10)
+n = random.randint(1, 100)
 count = 1
 guess = int(input("I'm thinking of a number between 1 an 10. Can you guess what number it is?"))
 while n != "guess":
