@@ -1,7 +1,9 @@
+import random
+
 def game():
     n = random.randint(1, 100)
     count = 1
-    guess = int(input("I'm thinking of a number between 1 an 10. Can you guess what number it is?"))
+    guess = int(input("I'm thinking of a number between 1 an 100. Can you guess what number it is?"))
     while n != "guess":
         if guess < n:
             print ("Too low")
@@ -18,7 +20,7 @@ def game():
                 print("Ok! Then let's play again!")
                 game()
             elif response.lower().startswith("n"):
-                print("Alright, on to something else then.")
-                break
+                exit("Alright, thanks for playing!\n")
             else:
                 print("Invalid input! Please enter y for Yes, or n for No")
+game()
